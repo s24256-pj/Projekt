@@ -175,17 +175,16 @@ int main()
         do{
                 cin.clear();
                 cin.sync();
-                cout << "Podaj ilosc wierszy macierzy:";
+                cout << "Podaj ilosc wierszy drugiej macierzy:";
         }while(!(cin>>n2));
 
         do{
                 cin.clear();
                 cin.sync();
-                cout << "Podaj ilosc kolumn macierzy:";
+                cout << "Podaj ilosc kolumn drugiej macierzy:";
         }while(!(cin>>m2));
 
         pobieraniewyswietlanie(n2,m2,B);
-
         dodawanieodejmowanie(n1,m1,n2,m2,A,B);
         break;
 
@@ -194,13 +193,13 @@ int main()
         do{
                 cin.clear();
                 cin.sync();
-                cout << "Podaj ilosc wierszy macierzy:";
+                cout << "Podaj ilosc wierszy drugiej macierzy:";
         }while(!(cin>>n2));
 
         do{
                 cin.clear();
                 cin.sync();
-                cout << "Podaj ilosc kolumn macierzy:";
+                cout << "Podaj ilosc kolumn drugiej macierzy:";
         }while(!(cin>>m2));
 
         pobieraniewyswietlanie(n2,m2,B);
