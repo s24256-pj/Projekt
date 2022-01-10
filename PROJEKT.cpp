@@ -2,6 +2,28 @@
 
 using namespace std;
 
+void pobieraniewyswietlanie(int n, int m,int tab[20][20]){
+
+    cout << "Podaj liczby do macierzy: " << endl;
+    for (int i=0;i<n;i++){
+            for (int j=0;j<m;j++){
+                while(!(cin>>tab[i][j]))
+                {
+                    cin.clear();
+                    cin.sync();
+                    cout << "Podaj liczbe calkowita\n";
+                }
+            }
+    }
+
+    for (int i=0;i<n;i++){
+            for (int j=0;j<m;j++){
+                cout << tab[i][j] << " ";
+            }
+            cout << endl;
+    }
+}
+
 void dodawanieodejmowanie(int n1,int m1,int n2, int m2, int tab1[20][20], int tab2[20][20]){
 
     int x;
@@ -48,31 +70,6 @@ void dodawanieodejmowanie(int n1,int m1,int n2, int m2, int tab1[20][20], int ta
 
 
     }
-
-}
-
-
-void pobieraniewyswietlanie(int n, int m,int tab[20][20]){
-
-    cout << "Podaj liczby do macierzy: " << endl;
-    for (int i=0;i<n;i++){
-            for (int j=0;j<m;j++){
-                while(!(cin>>tab[i][j]))
-                {
-                    cin.clear();
-                    cin.sync();
-                    cout << "Podaj liczbe calkowita\n";
-                }
-            }
-    }
-
-    for (int i=0;i<n;i++){
-            for (int j=0;j<m;j++){
-                cout << tab[i][j] << " ";
-            }
-            cout << endl;
-    }
-
 
 }
 
