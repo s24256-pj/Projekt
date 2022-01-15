@@ -118,7 +118,7 @@ int wyznacznik(int n1,int m1,int tab1[20][20]){
 
     int wyznacznik;
     if(n1==2 && m1==2){
-        wyznacznik = tab1[0][0]*tab1[1][1]+tab1[0][1]*tab1[1][1];
+        wyznacznik = tab1[0][0]*tab1[1][1]-tab1[0][1]*tab1[1][1];
         return wyznacznik;
     }
 
